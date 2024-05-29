@@ -40,11 +40,32 @@ nav{
 
 .centerForm{
     text-align: center;
+    margin: 10px;
 }
 
-button{
+.knowMoreBtn{
     background: yellow;
     width: 30%;
     height: 50px;
     margin: auto;
+}
+
+form{
+    background-color: brown;
+    width: 70%;
+    margin: auto;
+}
+input{
+    width: 50%;
+}
+
+#sub-ctn3{
+    text-align: center;
+
+}
+
+footer{
+    background: aqua;
+    display: flex;
+    
 }

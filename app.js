@@ -19,19 +19,45 @@ source.setAttribute('src', path);
 source.setAttribute('type', 'video/mp4');
 video.append(source);
 
-let menu = document.querySelector("nav .menu")
-console.log(menu)
+// let nav = document.querySelector("nav")
+// console.log(menu)
+let nav = document.querySelector("nav")
 
 function getLinks(arr){
     arr.forEach(aElem =>{
         let link = document.createElement("a")
         link.textContent = aElem.text;
         link.setAttribute("href", aElem.href)
-        menu.append(link)
+        nav.append(link)
     })
 }
 
 getLinks(menuLinks)
 
-let nav = document.querySelector("nav")
+
 nav.classList.add('flex-between')
+
+let subCtn2 = document.querySelector("#sub-ctn2 #cardsContainer")
+subCtn2.classList.add("cardsCtn")
+
+
+cards = [
+    {text: "lorum ........", imgSrc: "text"},
+    {text: "lorum ........", imgSrc: "text"},
+    {text: "lorum ........", imgSrc: "text"},
+];
+
+
+for(let i = 0; i < cards.length; i++){
+    let card = document.createElement("div")
+    card.classList.add("card-ctn")
+    let parag = document.createElement("p")
+    let image = document.createElement("img")
+
+    card.append(parag)
+    card.append(image)
+    subCtn2.append(card)
+}
+console.log(subCtn2)
+
+

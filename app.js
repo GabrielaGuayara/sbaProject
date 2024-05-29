@@ -65,9 +65,12 @@ for(let i = 0; i < cards.length; i++){
     card.append(image)
     card.append(button)
     subCtn2.append(card)
+    button.classList.add("knowMoreBtn")
 }
 console.log(subCtn2)
 
 const subCtn3 = document.getElementById("sub-ctn3")
 console.log(subCtn3)
 subCtn3.classList.add('centerForm')
+
+

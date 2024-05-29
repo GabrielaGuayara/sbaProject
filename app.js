@@ -15,7 +15,7 @@ videoCtn.append(video)
 video.setAttribute('id', 'galapagos-video');
 video.setAttribute('width', '100%')
 const source = document.createElement('source');
-const path = `island.mp4`
+const path = `img/island.mp4`
 source.setAttribute('src', path);
 source.setAttribute('type', 'video/mp4');
 source.setAttribute('width', '500px');
@@ -44,9 +44,9 @@ subCtn2.classList.add("cardsCtn")
 
 
 const cards = [
-    {text: "lorum ........", imgSrc: "img/bird.jpg"},
-    {text: "lorum ........", imgSrc: "img/iguana.jpg"},
-    {text: "lorum ........", imgSrc: "img/turtle.jpg"},
+    {text: "lorum ........", src: "img/bird.jpg"},
+    {text: "lorum ........", src: "img/iguana.jpg"},
+    {text: "lorum ........", src: "img/turtle.jpg"},
 ];
 
 
@@ -57,7 +57,7 @@ for(let i = 0; i < cards.length; i++){
     let image = document.createElement("img")
     let button = document.createElement("button")
     button.textContent = "Know More"
-    image.setAttribute("src", cards[i].imgSrc)
+    image.setAttribute("src", cards[i].src)
     image.setAttribute("width", "100%")
     image.setAttribute("height", "80%")
     // image.setAttribute("heigth", "70%")

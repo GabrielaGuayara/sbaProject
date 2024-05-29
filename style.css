@@ -1,12 +1,17 @@
 body{
     padding: 0;
     margin: 0;
+    width: 100%;
+    font-family: Tahoma, Geneva, sans-serif;
 }
 
 nav{
     background-color: aqua;
 }
 
+#sub-ctn1{
+    width: 100%;
+}
 .flex-between{
 
     padding: 5px;
@@ -26,7 +31,20 @@ nav{
 }
 .card-ctn{
     display: flex;
+    flex-direction: column;
     background-color: blueviolet;
-    height: 200px;
-    width: 300px;
+    height: 500px;
+    width: 400px;
+    margin: 10px;
+}
+
+.centerForm{
+    text-align: center;
+}
+
+button{
+    background: yellow;
+    width: 30%;
+    height: 50px;
+    margin: auto;
 }

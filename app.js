@@ -13,10 +13,12 @@ let video = document.createElement('video');
 console.log(video)
 videoCtn.append(video)
 video.setAttribute('id', 'galapagos-video');
+video.setAttribute('width', '100%')
 const source = document.createElement('source');
 const path = `island.mp4`
 source.setAttribute('src', path);
 source.setAttribute('type', 'video/mp4');
+source.setAttribute('width', '500px');
 video.append(source);
 
 // let nav = document.querySelector("nav")
@@ -53,14 +55,19 @@ for(let i = 0; i < cards.length; i++){
     card.classList.add("card-ctn")
     let parag = document.createElement("p")
     let image = document.createElement("img")
-
+    let button = document.createElement("button")
+    button.textContent = "Know More"
     image.setAttribute("src", cards[i].imgSrc)
     image.setAttribute("width", "100%")
+    image.setAttribute("height", "80%")
     // image.setAttribute("heigth", "70%")
-    card.append(parag)
+    // card.append(parag)
     card.append(image)
+    card.append(button)
     subCtn2.append(card)
 }
 console.log(subCtn2)
 
-
+const subCtn3 = document.getElementById("sub-ctn3")
+console.log(subCtn3)
+subCtn3.classList.add('centerForm')

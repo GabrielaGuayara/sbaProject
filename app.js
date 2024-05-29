@@ -41,10 +41,10 @@ let subCtn2 = document.querySelector("#sub-ctn2 #cardsContainer")
 subCtn2.classList.add("cardsCtn")
 
 
-cards = [
-    {text: "lorum ........", imgSrc: "text"},
-    {text: "lorum ........", imgSrc: "text"},
-    {text: "lorum ........", imgSrc: "text"},
+const cards = [
+    {text: "lorum ........", imgSrc: "img/bird.jpg"},
+    {text: "lorum ........", imgSrc: "img/iguana.jpg"},
+    {text: "lorum ........", imgSrc: "img/turtle.jpg"},
 ];
 
 
@@ -54,6 +54,9 @@ for(let i = 0; i < cards.length; i++){
     let parag = document.createElement("p")
     let image = document.createElement("img")
 
+    image.setAttribute("src", cards[i].imgSrc)
+    image.setAttribute("width", "100%")
+    // image.setAttribute("heigth", "70%")
     card.append(parag)
     card.append(image)
     subCtn2.append(card)

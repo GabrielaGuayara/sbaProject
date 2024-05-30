@@ -1,13 +1,16 @@
+import {cards} from "./arrayOfAnimals.js"
+
 //Setting NavBar
-menuLinks = [
+const menuLinks = [
     {text: "About", href: "#sub-ctn2"},
     {text: "Contact", href: "#sub-ctn3"}
 ]
 
 let navBar = document.querySelector('nav')
 navBar.classList.add('flex-between')
+navBar.style.background = 'var(--nav-ctn)'
 let navLinks = document.querySelector("nav .menu-links")
-let span = document.querySelector('span')
+let span = document.getElementById('logoImage')
 let logoImg = document.createElement('img')
 span.appendChild(logoImg)
 logoImg.setAttribute("src",'img/logo.jpg')
@@ -24,14 +27,10 @@ navLinks.classList.add('flex-between')
 
 //First section
 const subCtn1 = document.getElementById("sub-ctn1")
-// subCtn1.setAttribute('id', '#')
-// console.log(subCtn1)
-
 const videoCtn = document.querySelector("#sub-ctn1 .video-ctn")
-// console.log(videoCtn)
-
 let video = document.createElement('video');
-// console.log(video)
+
+
 videoCtn.append(video)
 video.setAttribute('id', 'galapagos-video');
 video.setAttribute('width', '100%')
@@ -53,18 +52,13 @@ let subCtn2 = document.querySelector("#sub-ctn2 #cardsContainer")
 subCtn2.classList.add("cardsCtn")
 
 
-const cards = [
-    {text: "lorum ........", src: "img/bird.jpg"},
-    {text: "lorum ........", src: "img/iguana.jpg"},
-    {text: "lorum ........", src: "img/turtle.jpg"},
-    {text: "lorum ........", src: "img/redbird.jpg"},
-    {text: "lorum ........", src: "img/tommaso.jpg"},
-];
 
 function getCards(cards){
     subCtn2.innerHTML = "";
     const maxCards = 3;
     for(let i = 0; i < maxCards; i++){
+        let title = document.createElement('h3')
+            title.innerText = cards[i].title;
         let card = document.createElement("div")
             card.classList.add("card-ctn")
         let parag = document.createElement("p")
@@ -72,9 +66,8 @@ function getCards(cards){
         let image = document.createElement("img")
         let button = document.createElement("button")
             button.textContent = "Know More"
-            image.setAttribute("src", cards[i].src)
-            image.setAttribute("width", "100%")
-            image.setAttribute("height", "80%")
+            image.setAttribute("src", cards[i].imgSrc)
+            card.append(title)
             card.append(image)
             // card.append(button)
             subCtn2.append(card)
@@ -139,3 +132,11 @@ submitBtn.addEventListener('click', (e)=>{
             errorMessg.display = 'none'
         }
 })
+
+
+//Personalize website by using window.prompt()
+let nameFromUser = window.prompt('Enter your name');
+document.getElementById('name').innerText = nameFromUser;
+
+
+document.querySelector('footer').style.background = 'var(--nav-ctn)'

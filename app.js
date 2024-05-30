@@ -39,6 +39,8 @@ const path = `img/island.mp4`
 source.setAttribute('src', path);
 source.setAttribute('type', 'video/mp4');
 source.setAttribute('width', '500px');
+video.autoplay = false;
+video.muted = true;
 video.append(source);
 
 getLinks(menuLinks)
@@ -82,3 +84,26 @@ console.log(subCtn3)
 subCtn3.classList.add('centerForm')
 
 
+//Form Verification
+// function verifyForm(){
+  
+
+// }
+
+let submitBtn = document.querySelector('form button[type="submit"]');
+submitBtn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    let inpFields = document.querySelectorAll('form input[type="text"]');
+    let isValid = true;
+    
+        for(let i = 0; i < inpFields.length; i++){
+            if(inpFields[i].value === ""){
+                isValid = false;
+            }
+        }
+        if(!isValid){
+            window.alert("Please fill in all fields")
+        }else{
+            window.alert("Form submitted sucessfully")
+        }
+})

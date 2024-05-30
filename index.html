@@ -5,30 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SBA: The Document Object Model</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav>
-
+        <span id="logoImage"></span>
+        <div class="menu-links"></div>
     </nav>
     <div id="main-ctn">
         <div id="sub-ctn1">
+            <h1 class="welcome">Welcome, <span id="name"></span>!</h1>
             <div class="video-ctn">
 
             </div>
         </div>
 
         <div id="sub-ctn2">
-            <div>
-                <center>
-                <h2>The Most Famous Animals in Galapagos Island</h2>
-            </center>
+            <div id="info">
+           <h1>The Galapagos Island</h1>
+            <p>
+                The Enchanted Archipelago is renowned as an iconic tourist destination. It features some of the world’s most unique and endemic wildlife species, wonderful beaches that continually rank among the world’s best.<br><br>
+                A trip to the Galapagos Islands will be the journey of your lifetime. The archipelago is blessed with pleasant weather all year round, so there is no “best” time to visit the precious islands. However, you may consider factors such as high season vs. low season and the climate, and some other factors, best explained in our when to go to the Galapagos Islands article.
+            </p>
             </div>
-
+                <h2>The Most Famous Animals in Galapagos Island</h2>
             <div id="cardsContainer">
                 
             </div>
+            <button id="getMore">Get More Animals Ramdonly</button>
         </div>
         <div id="sub-ctn3">
+            <h2>Send me your feedback</h2>
+            <div id="error"></div>
             <form action="/" method="GET">
                 <div>
                     <label for="name">Name</label><br>
@@ -42,21 +50,21 @@
                     <label for="message">Message</label><br>
                     <input id="message" name="messa" type="text" col="2" row="4"></input>
                 </div>
-                <button type="submit"> Submit </button>
+                <button id="submit" type="submit"> Submit </button>
             </form>
         </div>
     </div>
 
     <footer>
         <div>
-            <p>Linkeding</p>
-            <p>Twitter</p>
-            <p>Intagram</p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-whatsapp"></i>
         </div>
         <div>
-            Copyright
+        <span class="copyright"><i class="fa-solid fa-copyright"></i>Copyright</span>  
         </div>
     </footer>
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>

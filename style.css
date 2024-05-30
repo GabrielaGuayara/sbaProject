@@ -85,3 +85,10 @@ footer{
     display: flex;
 
 }
+
+.clickedBtn{
+    background-color: blueviolet;
+    height: 600px;
+    width: 400px;
+    margin: 10px;
+}

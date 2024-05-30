@@ -1,7 +1,14 @@
 :root{
     scroll-behavior: smooth;
+    --nav-ctn: #543310;
 }
-
+.welcome{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    font-size: 70px;
+    color: #fff;
+}
 body{
     padding: 0;
     margin: 0;
@@ -9,15 +16,19 @@ body{
     font-family: Tahoma, Geneva, sans-serif;
     display: flex;
     flex-direction: column;
+    background-color:  #F8F4E1;;
 }
-
-
-nav{
-    background-color: aqua;
-}
-
-nav span img{
+/* NavBar style */
+#logoImage img{
+    margin-left:20px ;
     width: 200px;
+    height: 50%
+}
+.flex-between{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     height: 50px;
 }
 
@@ -25,20 +36,44 @@ nav a{
     margin-left: 30px;
     font-size: 30px;
     text-decoration: none;
+    color: bisque;
 }
+
+/* Container 1 style */
 #sub-ctn1{
     width: 100%;
 }
-.flex-between{
-    padding: 10px;
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 100px;
+
+
+/* Container 2 style */
+
+#sub-ctn2, #info{
+    margin: 30px;
+    text-align: center;
 }
 
+#sub-ctn2 #info p{
+    margin: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
 
+#sub-ctn2 #info h1{
+    margin: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+h1, h2{
+    color: #a16627;
+}
+
+h1:hover{
+    color: #c7751c;
+}
+h2:hover{
+    color: #c7751c;
+}
 .cardsCtn{
     display: flex;
     justify-content: space-around;
@@ -48,10 +83,24 @@ nav a{
 .card-ctn{
     display: flex;
     flex-direction: column;
-    background-color: blueviolet;
-    height: 500px;
+    background-color: #01204E;
+    height: 600px;
     width: 400px;
     margin: 10px;
+    overflow: hidden;
+}
+
+.card-ctn h3{
+    color: #FEAE6F;
+}
+.card-ctn p{
+    color: #F6DCAC;
+    text-align: justify;
+    margin: 5px 15px;
+    padding: 5px 5px;
+}
+.card-ctn img{
+    height: 60%;
 }
 
 .centerForm{
@@ -65,19 +114,53 @@ nav a{
     height: 50px;
     margin: auto;
 }
+#getMore{
+    background-color: #028391;
+    color: bisque;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    margin:  0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
 
-form{
-    background-color: brown;
-    width: 70%;
-    margin: auto;
+#getMore:hover{
+    background-color: #1da8b8;
 }
-input{
-    width: 50%;
-}
+
+/* Container 3 */
 
 #sub-ctn3{
     text-align: center;
+    margin: 40px;
+}
 
+form{
+    margin: 30px;
+    background-color: rgba(151, 197, 235, 0.411);
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+input{
+    width: 80%;
+    margin: 10px;
+}
+
+#submit{
+    margin-top: 30px;
+    width: 100px;
+    height: 30px;
+    background-color: #028391;
+    color: bisque;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 footer{
@@ -86,9 +169,12 @@ footer{
 
 }
 
-.clickedBtn{
-    background-color: blueviolet;
-    height: 600px;
-    width: 400px;
-    margin: 10px;
+footer i, .copyright {
+    color: white;
+    margin: 20px 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
 }

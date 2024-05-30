@@ -1,9 +1,16 @@
+:root{
+    scroll-behavior: smooth;
+}
+
 body{
     padding: 0;
     margin: 0;
     width: 100%;
     font-family: Tahoma, Geneva, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
+
 
 nav{
     background-color: aqua;
@@ -14,7 +21,7 @@ nav span img{
     height: 50px;
 }
 
-.menu-links a{
+nav a{
     margin-left: 30px;
     font-size: 30px;
     text-decoration: none;

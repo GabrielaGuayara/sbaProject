@@ -33,7 +33,7 @@ body{
 }
 
 nav a{
-    margin-left: 30px;
+    margin-right: 30px;
     font-size: 30px;
     text-decoration: none;
     color: bisque;
@@ -138,29 +138,39 @@ h2:hover{
 }
 
 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     margin: 30px;
     background-color: rgba(151, 197, 235, 0.411);
     width: 70%;
     margin: auto;
     padding: 20px;
     border-radius: 20px;
+    height: 400px;
 }
 
-input{
+form input[type="text"]{
+    width: 80%;
+    margin: 10px;
+}
+form textarea{
     width: 80%;
     margin: 10px;
 }
 
 #submit{
     margin-top: 30px;
-    width: 100px;
-    height: 30px;
+    width: 150px;
+    height: 50px;
     background-color: #028391;
     color: bisque;
     border: none;
     border-radius: 5px;
     font-size: 18px;
     font-weight: bold;
+    margin: auto;
 }
 
 footer{
@@ -178,3 +188,19 @@ footer{
     display: flex;
     justify-content: center;
 }
+
+
+nav a:hover {
+	color: #c7751c;
+}
+
+@media screen and (max-width: 800px){
+    .cardsCtn{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 30px;
+        align-items: center;
+    
+    }
+  }

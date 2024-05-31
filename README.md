@@ -26,5 +26,5 @@ The Galapagos Island web application aims to measuare my skills and understardin
 
 ### URL
 Please click [here](
-https://github.com/GabrielaGuayara/sbaProject ) to find check the website.
+https://thegalagosisland.netlify.app/ ) to find check the website.
 

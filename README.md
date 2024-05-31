@@ -1,9 +1,6 @@
 # SBA 316: The Document Object Model (DOM)
 
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]]()
-
 The Galapagos Island web application aims to measuare my skills and understarding of the Document Object Model(DOM). It also aims to measure my capability to implement DOM and BOM features in a helpful way to fit the needs of a particula situation. In this case, I built this web application to share with other individuals the wildlife wonders of Galapagos Island. In this single-page web application you will find the use of use of DOM properties and methods to provide a dynamic user experience. This web page application also includes DOM events and form validation using a combination of built-in HTML validation attributes and DOM-event driven JavaScript validation.
 
 
@@ -15,8 +12,6 @@ The Galapagos Island web application aims to measuare my skills and understardin
 | CSS        | Cascading Style Sheets adds style and formatting to these structures                | 
 | JavaScript | Turns those stylized components into something that a user can interact with.| 
  
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## DOM methods and properties used in this project
  
@@ -32,4 +27,4 @@ The Galapagos Island web application aims to measuare my skills and understardin
 ### URL
 Please click [here](
 https://github.com/GabrielaGuayara/sbaProject ) to find check the website.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+

@@ -9,15 +9,12 @@ The Galapagos Island web application aims to measuare my skills and understardin
 
 
 ### Built With
-
-This section should list the languages and programming languages used to create this single-page website.
-
-| Technology | Description   |
-| :---:   | :---: | :---: |
-| HTML | The Hypertext Markup Language creates and structures the website's content  |
-| CSS| Cascading Style Sheets adds style and formatting to these structures |
-| JAVASCRIPT| Turns those stylized components into something that a user can interact with. |
-
+| Technology | Description                               | 
+|------------|-------------------------------------------|
+| HTML       |The Hypertext Markup Language creates and structures the website's content          | 
+| CSS        | Cascading Style Sheets adds style and formatting to these structures                | 
+| JavaScript | Turns those stylized components into something that a user can interact with.| 
+ 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 

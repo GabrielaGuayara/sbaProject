@@ -18,9 +18,9 @@ let navBar = document.querySelector('nav')
 
 let navLinks = document.querySelector("nav .menu-links")
 let span = document.getElementById('logoImage')
-    span.appendChild(logoImg)
 let logoImg = document.createElement('img')
     logoImg.setAttribute("src",'img/logo.jpg')
+    span.appendChild(logoImg)
 
 //Funtion that takes the array of links and asign them content and href attribute
 function getLinks(arr){
@@ -32,20 +32,18 @@ function getLinks(arr){
     })
 }
 
-//Added a css class to links
+//Added a css
 navLinks.classList.add('flex-between')
-
 
 
 //FIRST SECTION
 const videoCtn = document.querySelector("#sub-ctn1 .video-ctn")
 
-//Creates a video and source tag. Then, sets attributes for the source tag
+//Builds a video and source tag. Sets attributes for both of them
 let video = document.createElement('video');
 videoCtn.append(video)
 video.setAttribute('id', 'galapagos-video');
 video.setAttribute('width', '100%')
-
 const source = document.createElement('source');
 const path = `img/island.mp4`
 source.setAttribute('src', path);
@@ -55,7 +53,7 @@ video.autoplay = true;
 video.muted = true;
 video.append(source);
 
-//Calls the funtion tue getlInks funtion
+//Calls the getLinks function that generates the nav bar links
 getLinks(menuLinks)
 
 
@@ -64,7 +62,8 @@ getLinks(menuLinks)
 let subCtn2 = document.querySelector("#sub-ctn2 #cardsContainer")
 subCtn2.classList.add("cardsCtn")
 
-//Funtion that takes the array of animals and built the card for the second section
+
+//function that generates cards for the second section
 function getCards(cards){
     subCtn2.innerHTML = "";
     const maxCards = 3;
@@ -80,15 +79,19 @@ function getCards(cards){
         let button = document.createElement("button")
             button.textContent = "Know More"
             image.setAttribute("src", cards[i].imgSrc)
+
             card.appendChild(title)
             card.appendChild(image)
             card.append(parag)
+
              useDocFrag.appendChild(card)
     }
     subCtn2.append(useDocFrag);
 }
 
-//Selects the get more animals buttons from the html and then uses it to get random animals by using an event listener
+
+
+//Caches the get More animals button and then use it with an event listener to get more random animals
 const getMoreBtn = document.getElementById("getMore")
 getMoreBtn.addEventListener('click', (e)=>{
     subCtn2.innerHTML = "";
@@ -104,8 +107,9 @@ getMoreBtn.addEventListener('click', (e)=>{
     getCards(newCards);
 })
 
-//Call the getCards function that creates cards for the second section
+//Calls the getCards funtion that takes as paramenters the cards array from arrayOfAnimals.js
 getCards(cards)
+
 
 
 
@@ -115,11 +119,10 @@ subCtn3.classList.add('centerForm')
 
 
 //FORM VERIFICATION
-//Caches the submit button into a variable called submitBtn
 let submitBtn = document.querySelector('form button[type="submit"]');
 const errorMessg = document.getElementById('error')
 
-//Using event listener to verify that the user fills all the required fields.
+//Implements event listener to the submit button from the form
 submitBtn.addEventListener('click', (e)=>{
     e.preventDefault();
     let inpFields = document.querySelectorAll('form input[type="text"]');
@@ -127,7 +130,6 @@ submitBtn.addEventListener('click', (e)=>{
     let submitted= true;
     let messagesErrors =[];
     
-        //For Loop to iterate the nodelist that contains the name and lastname fields.
         for(let i = 0; i < inpFields.length; i++){
             if(inpFields[i].value === "" || inpFields[i] === null){
                 submitted = false;
@@ -148,5 +150,6 @@ submitBtn.addEventListener('click', (e)=>{
 
     })
 
-//Adding a color to the footer by using customized css
+
+//Adds customized css to the footer
 document.querySelector('footer').style.background = 'var(--nav-ctn)'

@@ -15,9 +15,7 @@ This section should list the languages and programming languages used to create 
 | Technology | Description   |
 | :---:   | :---: | :---: |
 | HTML | The Hypertext Markup Language creates and structures the website's content  |
-| :---:   | :---: | :---: |
 | CSS| Cascading Style Sheets adds style and formatting to these structures |
-| :---:   | :---: | :---: |
 | JAVASCRIPT| Turns those stylized components into something that a user can interact with. |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
